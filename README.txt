@@ -1,6 +1,6 @@
 Implementation of the SSA construction algorithm by Braun et al. (https://c9x.me/compile/bib/braun13cc.pdf)
 
-The paper describes an algorithm for construction an SSA Intermediate Representation that could "allow direct translation from an abstract syntax tree or bytecode" to SSA form with "no prior analysis required".
+The paper describes an algorithm for constructing an SSA Intermediate Representation that could "allow direct translation from an abstract syntax tree or bytecode" to SSA form with "no prior analysis required".
 This might be true for AST's. But since the paper assumes you know how many predecessors a basic block has, you're forced to do some analysis on the bytecode beforehand.
 
 
@@ -9,7 +9,7 @@ src/ir.rs contains the intermediate representation definitions and Builder.
 src/bytecode.rs contains the bytecode instructions definitions.
 
 
-I implemented simple bytecode instructions enough to convert the following C function to bytecode:
+I implemented simple bytecode instructions, enough to convert the following C function to bytecode:
 
 -------------------
 
